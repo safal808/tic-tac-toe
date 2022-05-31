@@ -1,7 +1,5 @@
 import os
-
 def printBoard(gameValues):
-    # Printing Board By using gameValues 's List
     print(f" {gameValues[0]} | {gameValues[1]} | {gameValues[2]} ")
     print(f"---|---|---")
     print(f" {gameValues[3]} | {gameValues[4]} | {gameValues[5]} ")
@@ -19,7 +17,6 @@ def checkWin(gameValues):
             print("X Won the match")
             return 1
 
-       
         if(gameValues[win[0]] == gameValues[win[1]] == gameValues[win[2]] == 'O'):
             printBoard(gameValues)
             print("O Won the match")
